@@ -3,7 +3,7 @@ import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 
 type Props = {}
- const TemplateDefault:React.FC = (children) => {
+ const TemplateDefault:React.FC = ({children}:any) => {
   return (
     <>
       <Header/>

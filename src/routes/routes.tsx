@@ -4,4 +4,3 @@ export const publicRoutes = [
     {path: '/', component: Home}
 ]
 
-export type publicType = typeof publicRoutes

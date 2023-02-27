@@ -4,13 +4,14 @@ import { Routes, Route} from 'react-router-dom';
 import TemplateDefault from './template/templateDefault/TemplateDefault';
 
 
+
 function App() {
   return (
     <div className="App">
       <Routes>
           {publicRoutes.map((route, index)=>{
             let Page = route.component
-            let Layout = TemplateDefault
+            let Layout:any = TemplateDefault
             return (<Route key={index} path={route.path} element={<Layout><Page/></Layout>}/>)
           })}
       </Routes>
